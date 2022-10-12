@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSA-M</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd7a383c86.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><i class="fa-solid fa-graduation-cap"></i></a>
+                <h2>ENSA-M</h2>
+            </div>
+            <div class="navLinks" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="col">
+                <h2>ENSA de Marrkech : Ecole d'Ingénierie</h2>
+                <p>L'École Nationale des Sciences Appliquées de Marrakech (ENSA) est une école d'ingénieurs marocaine
+                     localisée à Marrakech. Elle a été créée en 2000 par le Ministère de l'Enseignement supérieur,
+                     de la Formation des cadres et de la Recherche scientifique et constitue une composante de 
+                     l'université Cadi Ayyad.</p>
+                <a href="#">EXPLORE NOW</a>
+            </div>
+            <div class="col">
+                <img src="images/about-us.webp">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Just trying to Learn new things and <br>Discover the world<br>Believe It & Be Patient</p>
+        <div class="social-icons">
+            <a hraf="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a hraf="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a hraf="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a hraf="#"><i class="fa-brands fa-github fa-2x"></i></a>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> @<span>Choaib ELMADI</span></p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

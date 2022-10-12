@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSA-M</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd7a383c86.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><i class="fa-solid fa-graduation-cap"></i></a>
+                <h2>ENSA-M</h2>
+            </div>
+            <div class="navLinks" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="blogg">Our Certificate & Programs For 2021</h1>
+
+    </section>
+
+    <section class="blog-content">
+        <div class="roow"></div>
+            <div class="row">
+                <div class="leeft">
+                    <h2>School Clubs & Organizations</h2>
+                    <p>ENSA's Students organize -every<br> year- clubs to help people in the <br>high moutains of ATLAS and all <br>around Morocco.</p>
+                </div>
+                <div class="riight">
+                    <h2>Programmation Competitions</h2>
+                    <p>ENSA Marrakech is known by the <br> organization of progammation competitions <br>and also the invention .</p>
+                </div>
+            </div>
+            <div class="comment-box">
+                <h2>Leave a comment</h2>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name" required>
+                    <input type="email" placeholder="Enter Email" required>
+                    <textarea rows="5" placeholder="Your Comment" required></textarea>
+                    <button type="submit">POST COMMENT</button>
+                </form>
+            </div>
+    </section>
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Just trying to Learn new things and <br>Discover the world<br>Believe It & Be Patient</p>
+        <div class="social-icons">
+            <a hraf="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a hraf="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a hraf="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a hraf="#"><i class="fa-brands fa-github fa-2x"></i></a>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> @<span>Choaib ELMADI</span></p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

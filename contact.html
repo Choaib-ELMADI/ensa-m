@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSA-M</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd7a383c86.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><i class="fa-solid fa-graduation-cap"></i></a>
+                <h2>ENSA-M</h2>
+            </div>
+            <div class="navLinks" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+
+    </section>
+
+    <section class="location">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.5326316233854!2d-8.022665185513603!3d31.646644598063638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef65ca3de9bb%3A0x3ea5cfd960dd861d!2sENSA%20MARRAKECH!5e0!3m2!1sfr!2sma!4v1661412693773!5m2!1sfr!2sma" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <section class="contacter-nous">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <i class="fa-solid fa-home"></i>
+                    <span>
+                        <h5>ENSA MARRAKECH</h5>
+                        <p>JXWH+HQ7, Marrakech 40000</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+212500000000</h5>
+                        <p>Monday to Saturday</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>ensa-m@ecole-etude.com</h5>
+                        <p>Email us for more details</p>
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <form action="form.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="5" name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Just trying to Learn new things and <br>Discover the world<br>Believe It & Be Patient</p>
+        <div class="social-icons">
+            <a hraf="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a hraf="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a hraf="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a hraf="#"><i class="fa-brands fa-github fa-2x"></i></a>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> @<span>Choaib ELMADI</span></p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
